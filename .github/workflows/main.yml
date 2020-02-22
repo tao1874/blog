@@ -9,9 +9,7 @@ jobs:
       with:
         persist-credentials: false
     - name: Build # The project is built using npm and placed in the 'build' folder.
-        run: |
-          npm install
-          npm run-script build
+        run: npm install && npm run build
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
