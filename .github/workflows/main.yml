@@ -8,6 +8,7 @@ jobs:
       uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
       with:
         persist-credentials: false
+        
     - name: Build # The project is built using npm and placed in the 'build' folder.
         run: npm install && npm run build
 
