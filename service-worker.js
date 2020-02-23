@@ -27,71 +27,71 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "2017/09/27/随机与刻意练习/index.html",
-    "revision": "b30f3b2126e2078a9b004e98e02f0c47"
+    "revision": "c5d4723996a4a45c11a270ca458ff748"
   },
   {
     "url": "2018/04/29/css-父级元素高度为-0-解决方案/index.html",
-    "revision": "4ffcfe6714b248f462e6189a47d898d4"
+    "revision": "4f4b9ce740fd22627f2993dd867517de"
   },
   {
     "url": "2018/05/03/javascript-原型理解/index.html",
-    "revision": "0baeb9f6e1f935f20a8eed359c4cfbdc"
+    "revision": "a87ee3438336434f781400da0f261bdf"
   },
   {
     "url": "2018/05/05/csss实现滑动操作/index.html",
-    "revision": "d9b1990472f8465527f8b2b7ba54ea70"
+    "revision": "1dedf9d95f7437e61348735658aed734"
   },
   {
     "url": "2018/09/26/just-do-it/index.html",
-    "revision": "a0bc942dd7bc89a6cbbbcffd3d7ba997"
+    "revision": "34905f895e0da072fe82b439b53ae9a0"
   },
   {
     "url": "2018/11/03/难念的经/index.html",
-    "revision": "73d6f1ebc1e24c4f29e726e0dd79949c"
+    "revision": "01a3f08197b60c718265335b863b8a3f"
   },
   {
     "url": "2018/12/01/困境/index.html",
-    "revision": "66add66c70553786aabf14644e2ae20d"
+    "revision": "1210d3972abb4578a98f223d54e8cafc"
   },
   {
     "url": "2019/01/27/css术语/index.html",
-    "revision": "ef132bcf5f383dfb3952e1a424337fd1"
+    "revision": "59731502dfa3f72f23f756b4a54bcfca"
   },
   {
     "url": "2019/01/27/前端神器——emment/index.html",
-    "revision": "d4daa405b308e0fb0658331b1529ea01"
+    "revision": "5342ad13d96144c82731b096b1e13475"
   },
   {
     "url": "2019/01/27/风/index.html",
-    "revision": "2633aa74a2c709b0d779eb45bf1c89f4"
+    "revision": "9267aee934a3cd0a0d9c5f990953e1dd"
   },
   {
     "url": "2019/03/16/javascript-数组/index.html",
-    "revision": "2c1bfe27741f2972eb8b8eb17bc6b08b"
+    "revision": "2cf8751b03b058b8166b646c19811aff"
   },
   {
     "url": "2019/03/30/我所理解的html语义化/index.html",
-    "revision": "25d5b184c1ca561f0cf79cef95dc90db"
+    "revision": "af5bfb29def40ca1bbbac10e3fc337cf"
   },
   {
     "url": "2019/04/02/写给自己看的grid布局教程/index.html",
-    "revision": "6bd0b8edf142742941ec0314935cd175"
+    "revision": "7da7369d34a72f56b04e78871dc0b365"
   },
   {
     "url": "2019/05/26/vue之作用域插槽/index.html",
-    "revision": "7e7921caa30afd2fd63a9140ea0c457b"
+    "revision": "69244f4e231fd26ebb0eb49f9d762920"
   },
   {
     "url": "2019/09/22/web-components-简明教程/index.html",
-    "revision": "9bc9a7cbec9b9efac52404c8efd568fe"
+    "revision": "c66fd3856d9bab4acd69875e6b60524e"
   },
   {
     "url": "2020/01/11/正则表达式学习小记/index.html",
-    "revision": "01bff29081ccbca27fbc8b3e6e6dc31c"
+    "revision": "5c308b42b1dde3b4fc1a96c8748e17e5"
   },
   {
     "url": "404.html",
-    "revision": "aef7c1c41aeeb38cd8d155ec8daf2c16"
+    "revision": "015ad7acb2e9994821757c38a13dd28f"
   },
   {
     "url": "assets/css/0.styles.b1c2b92d.css",
@@ -230,8 +230,8 @@ self.__precacheManifest = [
     "revision": "12d5f06da5d918d873adee9503886e36"
   },
   {
-    "url": "assets/js/app.a01bf09b.js",
-    "revision": "ea5be13e9c6188baadf7d5291a89bba9"
+    "url": "assets/js/app.8ac0d1fd.js",
+    "revision": "ff87a493ce14c01930d39398426fa5db"
   },
   {
     "url": "assets/js/vuejs-paginate.e0fcfbae.js",
@@ -246,140 +246,64 @@ self.__precacheManifest = [
     "revision": "743824ce5066afc3510ce256354fbc15"
   },
   {
-    "url": "icons/android-icon-36x36.png",
-    "revision": "c790d2af4151635378a81efe58ea9dbc"
-  },
-  {
-    "url": "icons/android-icon-48x48.png",
-    "revision": "25fd75bdd115b1513d23a0eed7e29e25"
-  },
-  {
-    "url": "icons/android-icon-72x72.png",
-    "revision": "c7ee38f47b70bd216ed39e4b8ade697b"
-  },
-  {
-    "url": "icons/android-icon-96x96.png",
-    "revision": "3c1f42bbae1acbd85ab744609f663dcb"
-  },
-  {
-    "url": "icons/apple-icon-114x114.png",
-    "revision": "0ed4d5f73bde5fb28fc7ab68f546a1c7"
-  },
-  {
-    "url": "icons/apple-icon-120x120.png",
-    "revision": "43508f73e4b1b2e7cc3c83bebe897c4f"
-  },
-  {
-    "url": "icons/apple-icon-144x144.png",
-    "revision": "495a66b92fe5ba23c6d60ede93d9d5fa"
-  },
-  {
     "url": "icons/apple-icon-152x152.png",
     "revision": "7a3040716887d147fdd3358f81273282"
-  },
-  {
-    "url": "icons/apple-icon-180x180.png",
-    "revision": "eec9358a2aa508eb8c8f5d9b618a7732"
-  },
-  {
-    "url": "icons/apple-icon-57x57.png",
-    "revision": "cdd3ea38d5dcb1debc04889fbefe0e1b"
-  },
-  {
-    "url": "icons/apple-icon-60x60.png",
-    "revision": "df1d5ec6784864f881d9d5bc33c70aff"
-  },
-  {
-    "url": "icons/apple-icon-72x72.png",
-    "revision": "c7ee38f47b70bd216ed39e4b8ade697b"
-  },
-  {
-    "url": "icons/apple-icon-76x76.png",
-    "revision": "15dc9658f6cd1695573a86a382afe39f"
-  },
-  {
-    "url": "icons/apple-icon-precomposed.png",
-    "revision": "64f1acc7e075dfa598dc4a77f69ca743"
   },
   {
     "url": "icons/apple-icon.png",
     "revision": "64f1acc7e075dfa598dc4a77f69ca743"
   },
   {
-    "url": "icons/favicon-16x16.png",
-    "revision": "67acff270d9f58dc7bf510c870f0f7e0"
-  },
-  {
-    "url": "icons/favicon-32x32.png",
-    "revision": "9942ed3f2ae3740650dec83c8a808428"
-  },
-  {
-    "url": "icons/favicon-96x96.png",
-    "revision": "3c1f42bbae1acbd85ab744609f663dcb"
-  },
-  {
     "url": "icons/ms-icon-144x144.png",
     "revision": "495a66b92fe5ba23c6d60ede93d9d5fa"
   },
   {
-    "url": "icons/ms-icon-150x150.png",
-    "revision": "dd33d054cf6c184f49a62d93adcfbc3d"
-  },
-  {
-    "url": "icons/ms-icon-310x310.png",
-    "revision": "8980e8955b69b263e396a9bb8bb1b578"
-  },
-  {
-    "url": "icons/ms-icon-70x70.png",
-    "revision": "b38a7863a5db81a748e726749479b06d"
-  },
-  {
     "url": "index.html",
-    "revision": "9bef290b209fcd962f31173dd507776d"
+    "revision": "7ef05830d3803a40f2bcf7feac2cdb23"
   },
   {
     "url": "page/2/index.html",
-    "revision": "0d3ea4c4bbcd8557b66f043b4995ee37"
+    "revision": "5227dbf609d0197e11b7b4e79d851838"
   },
   {
     "url": "page/3/index.html",
-    "revision": "08640f4e723e193bbbb36abc665f63d7"
+    "revision": "c4ab21b645554dc4b2b581126150c0f6"
   },
   {
     "url": "page/4/index.html",
-    "revision": "1fed397450358e34082512357ea0d5b5"
+    "revision": "8d77cac7086c5431dce3bddb11f712d8"
   },
   {
     "url": "tag/css/index.html",
-    "revision": "6d14e18dfa6def1ab0d69ce274c53b86"
+    "revision": "4938dc84c6c360a203114a03fe8a9eb4"
   },
   {
     "url": "tag/CSS/index.html",
-    "revision": "a12d6a8092a6a6c2e562e48ee56eee26"
+    "revision": "e1bd1931b300f052723547628a028578"
   },
   {
     "url": "tag/index.html",
-    "revision": "c42a8c76ec0c9c3fca1cd2c4b2974f22"
+    "revision": "a317ccfeb8efa8179e99e497c2536949"
   },
   {
     "url": "tag/JavaScript/index.html",
-    "revision": "728be7d8cb3d82d084fea2a499e150b2"
+    "revision": "ee829e91da90831fa1a9a8ec7138995d"
   },
   {
     "url": "tag/Js/index.html",
-    "revision": "3452c030fc4b74a10cdd7f37929e03fc"
+    "revision": "c5c39def3c9b8b6af98a3cebc45b0f1c"
   },
   {
     "url": "tag/Tool/index.html",
-    "revision": "05837b11312d83e27a4f09f1b3a7c137"
+    "revision": "8ae711d1129c970fc51d807752363ed5"
   },
   {
     "url": "tag/Vue/index.html",
-    "revision": "299ac7bc755ea8587d963822409a196b"
+    "revision": "2e727c8577f9e2b0582ea55a0c06d0a8"
   },
   {
     "url": "tag/随笔/index.html",
-    "revision": "b1193f4c77c5bf6102d4ef539eda77bf"
+    "revision": "49464b335708c3c92928aa8d0f3b3d20"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
