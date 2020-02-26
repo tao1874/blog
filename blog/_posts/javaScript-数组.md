@@ -1,7 +1,7 @@
 ---
 title: javaScript 数组
 date: 2019-03-16 18:04:04
-tags:
+tags: JavaScript
 ---
 
 > The JavaScript **Array** object is a global object that is used in the construction of arrays; which are high-level, list-like objects.

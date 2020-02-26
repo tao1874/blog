@@ -1,7 +1,7 @@
 ---
-title: css术语
+title: CSS 术语
 date: 2019-01-27 21:54:38
-tags:
+tags: CSS
 ---
 有必要整理一下css里的术语  
 1. 属性  

@@ -3,7 +3,19 @@ module.exports = {
     theme: '@vuepress/theme-blog',
     base:"/blog/",
     themeConfig: {
-      // Please keep looking down to see the available options.
+      smoothScroll: true,
+      footer: {
+        contact: [
+          {
+            type: 'github',
+            link: 'https://github.com/tao1874',
+          },
+          {
+            type: 'twitter',
+            link: 'https://twitter.com/SampanPeng',
+          },
+        ],
+      }
     },
     head: [
       ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -16,8 +28,13 @@ module.exports = {
       ['meta', { name: 'msapplication-TileImage', content: '/icons/ms-icon-144x144.png' }],
       ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
     ],
-    plugins: ['@vuepress/pwa', {
-      serviceWorker: true,
-      updatePopup: true
-    }],
+    plugins: [
+      [
+        '@vuepress/pwa',{
+          serviceWorker: true,
+          updatePopup: true
+        }
+      ],
+      ['@vuepress/medium-zoom']
+    ] 
   }
