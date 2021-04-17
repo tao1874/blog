@@ -36,5 +36,10 @@ module.exports = {
         }
       ],
       ['@vuepress/medium-zoom']
-    ] 
+    ],
+    markdown:{
+      toc:{
+        includeLevel: [2,3,4]
+      }
+    }
   }
