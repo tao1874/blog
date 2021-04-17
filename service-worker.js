@@ -27,75 +27,75 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "2017/09/27/随机与刻意练习/index.html",
-    "revision": "0cb1ee13b5dfb6e680bb08eb1df55811"
+    "revision": "234a27c894b08681c79d92af52e76971"
   },
   {
     "url": "2018/04/29/css-父级元素高度为-0-解决方案/index.html",
-    "revision": "70ce070e636026799afd79689bb37ab5"
+    "revision": "c45d520c2a03712bb581fc6089408c84"
   },
   {
     "url": "2018/05/03/javascript-原型理解/index.html",
-    "revision": "da3d80b7b40a68d1ed423bceec4e4b69"
+    "revision": "850b22d01851ce090926746a4ebfd1d3"
   },
   {
     "url": "2018/05/05/csss实现滑动操作/index.html",
-    "revision": "bbc3daf654649595525c7013869fca38"
+    "revision": "f9ec0225043f0ffdc22a4c21a37d8a25"
   },
   {
     "url": "2018/09/26/just-do-it/index.html",
-    "revision": "a0c0c73e735cf6b7dd43c983bdca2662"
+    "revision": "78e1213dc31b06f2cb718a0a89cadd60"
   },
   {
     "url": "2018/11/03/难念的经/index.html",
-    "revision": "7f5df20e92877ba59eb3badfe7ca031f"
+    "revision": "e7f95f31d6d143f9e515ca949dbabd27"
   },
   {
     "url": "2018/12/01/困境/index.html",
-    "revision": "1785c4d6e2c5dcfc640fc23d0a368445"
+    "revision": "d8aa4f13ff6cf98749f870bac9f3b587"
   },
   {
     "url": "2019/01/27/css术语/index.html",
-    "revision": "f6e830eea1fe85d675fed3452d2b284a"
+    "revision": "626f09e517869e9264f22c9ea81dd452"
   },
   {
     "url": "2019/01/27/前端神器——emment/index.html",
-    "revision": "cb94ee2051903eac5d7d8e9f26aac9b3"
+    "revision": "e5b14f9ede67015044314bba0bf8f8fc"
   },
   {
     "url": "2019/01/27/风/index.html",
-    "revision": "c9686b3631624fd8d3f231faa6f85180"
+    "revision": "ea85bf0e81f3efbde53a3282c59b23c3"
   },
   {
     "url": "2019/03/16/javascript-数组/index.html",
-    "revision": "c3e4ddedee189b0debd39fd0e563738d"
+    "revision": "dc61fc58fc873d2eb0a50c350ab9c628"
   },
   {
     "url": "2019/03/30/我所理解的html语义化/index.html",
-    "revision": "7168f4f9cac71bf02f63ff8a1d31cd45"
+    "revision": "3cf1d81337293f5e6e251ddd85af4110"
   },
   {
     "url": "2019/04/02/写给自己看的grid布局教程/index.html",
-    "revision": "4bfdb44bff955061afcaf679cb0d619f"
+    "revision": "620daf12d0c8575bc3b15002ab80cb2e"
   },
   {
     "url": "2019/05/26/vue之作用域插槽/index.html",
-    "revision": "63f2fe075aa105c12e87b65fa23602df"
+    "revision": "83a3e67f36dd5bf9074c80ef46545723"
   },
   {
     "url": "2019/09/22/web-components-简明教程/index.html",
-    "revision": "9c1beb04912600697daedab40fe6f472"
+    "revision": "79720eb0a131d7b549022242d0f9775c"
   },
   {
     "url": "2020/01/11/正则表达式学习小记/index.html",
-    "revision": "779cfe6e3cf11c107fa10a5e9abba1be"
+    "revision": "161c95b33c1ccbbe9953ba2122b7332a"
   },
   {
     "url": "2021/04/17/javascript设计模式与开发实践/index.html",
-    "revision": "58aeda80d9ed19ff4fa9eb058786f59f"
+    "revision": "2c6cc8866365c54de73954b043820ce8"
   },
   {
     "url": "404.html",
-    "revision": "9004219b1c92c8d3b899ec446b237eca"
+    "revision": "09d60d7d86d90694ee1bc88c25ac7407"
   },
   {
     "url": "assets/css/0.styles.fb216152.css",
@@ -166,8 +166,8 @@ self.__precacheManifest = [
     "revision": "85b45cacb464b456ea9788e2f81f6f6c"
   },
   {
-    "url": "assets/js/19.9f641fe8.js",
-    "revision": "9070a83a33e62075a3a33e5e2b053a63"
+    "url": "assets/js/19.d3f03706.js",
+    "revision": "c27159c810952d53c304c0901df15c92"
   },
   {
     "url": "assets/js/20.1531555f.js",
@@ -242,8 +242,8 @@ self.__precacheManifest = [
     "revision": "92b0523aa3cde8bd259f6d0487727d87"
   },
   {
-    "url": "assets/js/app.130d8409.js",
-    "revision": "113e59759a0cd9cd4676f08bf279d55b"
+    "url": "assets/js/app.530a321b.js",
+    "revision": "e1d06003546e4e63dc3341b8dcd7f195"
   },
   {
     "url": "assets/js/vuejs-paginate.15417ede.js",
@@ -271,55 +271,55 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "6b0a9457e5eb6991107f8d99d03e92ae"
+    "revision": "e625971c43de0c6e282ae901161a72d4"
   },
   {
     "url": "page/2/index.html",
-    "revision": "359eb68e80c9c52b4893af4c38eebcc2"
+    "revision": "4656a771f4c41c8bf4ac1fd01814e187"
   },
   {
     "url": "page/3/index.html",
-    "revision": "16e54aca2fa0b2c81fcdc4e1609614ae"
+    "revision": "b667af44ae5195f4bb6a6133b00818b3"
   },
   {
     "url": "page/4/index.html",
-    "revision": "13d98408f2a31eb938134fa976cffbed"
+    "revision": "47b3370c10be729cf2e0f6d3e1510795"
   },
   {
     "url": "tag/CSS/index.html",
-    "revision": "5ee64fef1fb3ae8fdb024156b05ef701"
+    "revision": "3436ed10d42b54f71da8c2d9e2911174"
   },
   {
     "url": "tag/Design Patters/index.html",
-    "revision": "bdca5ca69bd4a9599f6b1b42a9a43d2e"
+    "revision": "29350842f88a1269bbd5c5ddbcf7861e"
   },
   {
     "url": "tag/HTML/index.html",
-    "revision": "4fe543940a15b7b122f476bedef73e73"
+    "revision": "63520d38895da5360255989e411e87e6"
   },
   {
     "url": "tag/index.html",
-    "revision": "dc3d3715efd0a142d883c04771099a9a"
+    "revision": "f17d1c1ba6e4867ffef6ba116feb5805"
   },
   {
     "url": "tag/JavaScript/index.html",
-    "revision": "8eae6f97857954896860182cb652fda6"
+    "revision": "03ed0e68020e338d79698412050af730"
   },
   {
     "url": "tag/Regex/index.html",
-    "revision": "dbf1b4e5e26d66a9c86b2383373ebf6f"
+    "revision": "56119d22cb6116652921bf84182e4a74"
   },
   {
     "url": "tag/Tool/index.html",
-    "revision": "513d76acb72eda18b3264ef9250e6124"
+    "revision": "01f4924ea9b05ebc62cbdb5d8e01c459"
   },
   {
     "url": "tag/Vue/index.html",
-    "revision": "d91856f58478185274971629bcc526a7"
+    "revision": "a8cf36ea2569cd84c6100c31f6f2d333"
   },
   {
     "url": "tag/随笔/index.html",
-    "revision": "a0219dd94a5b300ae489f3b69612df0d"
+    "revision": "50cb7f2c597e9275bdcdb03214ab4b61"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
