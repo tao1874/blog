@@ -35,7 +35,8 @@ module.exports = {
           updatePopup: true
         }
       ],
-      ['@vuepress/medium-zoom']
+      ['@vuepress/medium-zoom'],
+      'vuepress-plugin-mermaidjs'
     ],
     markdown:{
       toc:{
