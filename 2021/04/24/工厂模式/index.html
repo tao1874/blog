@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>工厂模式 | 挖煤工</title>
+    <meta name="description" content="工厂方法和抽象工厂
+
+一般来说我们都会用 new 操作符直接创建对象，这本身没什么问题，但是当我们的系统存在很多的具体类，实例化哪个取决于运行时的一些条件。比如根据类型创建不同的产品
+if (a) {
+    return new ProductA()
+} else if (b) {
+    return new ProductB()
+} else if (xxx) ...">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/blog/favicon.ico">
+  <link rel="manifest" href="/blog/manifest.json">
+  <meta name="theme-color" content="#d05dd2">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/blog/icons/apple-icon-152x152.png">
+  <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg" color="#3eaf7c">
+  <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.65e42172.css" as="style"><link rel="preload" href="/blog/assets/js/app.fdc5c915.js" as="script"><link rel="preload" href="/blog/assets/js/7.170c1fef.js" as="script"><link rel="preload" href="/blog/assets/js/4.6f2e2bc2.js" as="script"><link rel="preload" href="/blog/assets/js/27.9fac4d84.js" as="script"><link rel="preload" href="/blog/assets/js/8.77d576c5.js" as="script"><link rel="prefetch" href="/blog/assets/js/1.c8c89571.js"><link rel="prefetch" href="/blog/assets/js/10.e2219682.js"><link rel="prefetch" href="/blog/assets/js/11.37e3faf3.js"><link rel="prefetch" href="/blog/assets/js/12.57eaae95.js"><link rel="prefetch" href="/blog/assets/js/13.8b96acb0.js"><link rel="prefetch" href="/blog/assets/js/14.6bea25ff.js"><link rel="prefetch" href="/blog/assets/js/15.15eea581.js"><link rel="prefetch" href="/blog/assets/js/16.4394c0c3.js"><link rel="prefetch" href="/blog/assets/js/17.31ca53b5.js"><link rel="prefetch" href="/blog/assets/js/18.cb919d7f.js"><link rel="prefetch" href="/blog/assets/js/19.fe1ad4e7.js"><link rel="prefetch" href="/blog/assets/js/20.b74df552.js"><link rel="prefetch" href="/blog/assets/js/21.3b2dbac3.js"><link rel="prefetch" href="/blog/assets/js/22.cd1e23ee.js"><link rel="prefetch" href="/blog/assets/js/23.35e590cf.js"><link rel="prefetch" href="/blog/assets/js/24.bf44808f.js"><link rel="prefetch" href="/blog/assets/js/25.2dd0542d.js"><link rel="prefetch" href="/blog/assets/js/26.7ad17089.js"><link rel="prefetch" href="/blog/assets/js/28.2623f9d7.js"><link rel="prefetch" href="/blog/assets/js/29.ed9b613c.js"><link rel="prefetch" href="/blog/assets/js/30.1022ea26.js"><link rel="prefetch" href="/blog/assets/js/31.6ad4f060.js"><link rel="prefetch" href="/blog/assets/js/32.9cec61bd.js"><link rel="prefetch" href="/blog/assets/js/33.fd10ec2e.js"><link rel="prefetch" href="/blog/assets/js/5.6d2d1f17.js"><link rel="prefetch" href="/blog/assets/js/6.dd681279.js"><link rel="prefetch" href="/blog/assets/js/9.5be4f9a3.js"><link rel="prefetch" href="/blog/assets/js/vuejs-paginate.90bd32d2.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.65e42172.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/blog/" class="nav-link home-link">挖煤工 </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/blog/" class="nav-link">Blog</a></li><li class="nav-item"><a href="/blog/tag/" class="nav-link">Tags</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/blog/" class="nav-link mobile-home-link">挖煤工 </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/blog/" class="nav-link">Blog</a></li><li class="mobile-nav-item"><a href="/blog/tag/" class="nav-link">Tags</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        工厂模式
+      </h1> <div class="post-meta"><!----> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2021-04-24T00:16:00.000Z">
+      Sat Apr 24 2021
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-d832e844><a href="/blog/tag/JavaScript" data-v-d832e844> JavaScript </a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><p>工厂方法和抽象工厂</p> <p>一般来说我们都会用 <code>new</code> 操作符直接创建对象，这本身没什么问题，但是当我们的系统存在很多的具体类，实例化哪个取决于运行时的一些条件。比如根据类型创建不同的产品</p> <div class="language-JavaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ProductA</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ProductB</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>xxx<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//.......if more concrete class</span>
+<span class="token punctuation">}</span>
+
+
+</code></pre></div><p>如果系统内新增一个具体类的时候，我们就需要更改代码，这样的代码显然不具备伸缩性和可维护性，违反了编程中很重要的开闭原则：对扩展开放但是对修改封闭</p> <div class="spinner" style="background:rgb(66, 185, 131);" data-v-1bbcb91a></div><blockquote><p>客户代码耦合具体类型</p></blockquote> <p>如何解决这个问题，很容易的我们想到将对象的创建过程单独出来，比如有个 <code>createProduct</code> 方法，专职创建我们需要的对象，这是最简单的工厂模式的体现，但是依旧解决不了创建者耦合具体类的问题。</p> <p>依赖倒置原则提醒我们创建对象的时候要避免依赖具体类型，而是依赖抽象，我们可以在超类里声明一个抽象的创建方法，返回的是关于创建对象的抽象，然后各个子类去实现这个创建方法，子类当然知道自己需要实例化哪个类型，而客户代码并不依赖具体类型，而是依赖抽象（向上转型），当我们扩展新的具体类，并不需要更改客户的代码，完成了客户代码与具体类的解耦</p> <div class="spinner" style="background:rgb(66, 185, 131);" data-v-1bbcb91a></div><p>代码示例：</p> <div class="language-typeScript extra-class"><pre class="language-typescript"><code><span class="token comment">/**
+ * A factory method handles object creation and encapsulates it in a subclass.
+ * This decouples the client code in the superclass from the object creation code in the subclass.
+ * excerpt From: Eric Freeman. “Head First Design Patterns.” Apple Books. 
+ */</span>
+
+
+<span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">PizzaStore</span> <span class="token punctuation">{</span>
+   
+    <span class="token keyword">public</span> <span class="token function">orderPizza</span><span class="token punctuation">(</span><span class="token keyword">type</span><span class="token operator">:</span><span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span>Pizza <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> pizza <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">createPizza</span><span class="token punctuation">(</span><span class="token keyword">type</span><span class="token punctuation">)</span>
+        pizza<span class="token punctuation">.</span><span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        pizza<span class="token punctuation">.</span><span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> pizza
+    <span class="token punctuation">}</span>
+    <span class="token keyword">abstract</span> <span class="token function">createPizza</span><span class="token punctuation">(</span><span class="token keyword">type</span><span class="token operator">:</span><span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span>Pizza<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Pizza</span> <span class="token punctuation">{</span>
+    name<span class="token operator">!</span><span class="token operator">:</span><span class="token builtin">string</span>
+    <span class="token function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span><span class="token keyword">void</span><span class="token punctuation">{</span>
+        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">preparing </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> pizza</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">cut</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span><span class="token keyword">void</span> <span class="token punctuation">{</span>
+        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'cuting into squares'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">NewYorkStyleCheesePizza</span> <span class="token keyword">extends</span> <span class="token class-name">Pizza</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token builtin">string</span>
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&quot;NewYork Style Cheese Pizza 🧀🧀🧀🧀&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">NewYorkStyleVeggiePizza</span> <span class="token keyword">extends</span> <span class="token class-name">Pizza</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token builtin">string</span>
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&quot;NewYork Style Veggie Pizza 🥦🥦🥦🥦&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">NewYorkPizzaStore</span> <span class="token keyword">extends</span> <span class="token class-name">PizzaStore</span> <span class="token punctuation">{</span>
+    <span class="token function">createPizza</span><span class="token punctuation">(</span><span class="token keyword">type</span><span class="token operator">:</span><span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span>Pizza<span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">type</span> <span class="token operator">===</span> <span class="token string">'cheese'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">NewYorkStyleCheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">type</span> <span class="token operator">===</span> <span class="token string">'veggie'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">NewYorkStyleVeggiePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">NewYorkStyleCheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">TokyoStyelCheesePizza</span> <span class="token keyword">extends</span> <span class="token class-name">Pizza</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token builtin">string</span>
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&quot;Tokyo 🇯🇵 Style Cheese Pizza&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">TokyoPizzaStore</span> <span class="token keyword">extends</span> <span class="token class-name">PizzaStore</span> <span class="token punctuation">{</span>
+    <span class="token function">createPizza</span><span class="token punctuation">(</span><span class="token keyword">type</span><span class="token operator">:</span><span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span>Pizza<span class="token punctuation">{</span>   
+        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">type</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+             
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">TokyoStyelCheesePizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//client code </span>
+
+<span class="token keyword">const</span> newYorkPizzaStore <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">NewYorkPizzaStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> tokyoPizzaStore <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TokyoPizzaStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+newYorkPizzaStore<span class="token punctuation">.</span><span class="token function">orderPizza</span><span class="token punctuation">(</span><span class="token string">'cheese'</span><span class="token punctuation">)</span>
+newYorkPizzaStore<span class="token punctuation">.</span><span class="token function">orderPizza</span><span class="token punctuation">(</span><span class="token string">'veggie'</span><span class="token punctuation">)</span>
+tokyoPizzaStore<span class="token punctuation">.</span><span class="token function">orderPizza</span><span class="token punctuation">(</span><span class="token string">&quot;cheese&quot;</span><span class="token punctuation">)</span>
+
+</code></pre></div></div> <footer><!----> <hr> <!----></footer></article> <!----></div></div> <footer class="footer" data-v-582f9766><div class="footer-left-wrap" data-v-582f9766><ul class="contact" data-v-582f9766><li class="contact-item" data-v-582f9766><a href="https://github.com/tao1874" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-582f9766><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-582f9766><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-582f9766></path></svg>
+          
+        </a></li><li class="contact-item" data-v-582f9766><a href="https://twitter.com/SampanPeng" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-582f9766><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" data-v-582f9766><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" data-v-582f9766></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-582f9766><ul class="copyright" data-v-582f9766></ul></div></footer></div><div class="global-ui"><!----></div></div>
+    <script src="/blog/assets/js/app.fdc5c915.js" defer></script><script src="/blog/assets/js/7.170c1fef.js" defer></script><script src="/blog/assets/js/4.6f2e2bc2.js" defer></script><script src="/blog/assets/js/27.9fac4d84.js" defer></script><script src="/blog/assets/js/8.77d576c5.js" defer></script>
+  </body>
+</html>
