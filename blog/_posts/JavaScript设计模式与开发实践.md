@@ -7,7 +7,6 @@ tags:
 author: 挖煤工人
 location: Xi'an  
 ---
-
 # 设计模式
 
 ## 多态
