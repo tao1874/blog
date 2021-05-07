@@ -1,6 +1,6 @@
 ---
-title: just do it
-date: 2018-09-26 22:36:48
+title: 深入理解CSSminimax()函数
+date: 2021-05-07 17:36:48
 tags: 随笔
 ---
 
@@ -40,7 +40,7 @@ grid-template-columns: minmax(20px, 100px) 1fr 1fr;
 
 对应的，`auto-fill` 就是第一种处理方式，只要允许的宽度能扩展新的列，那就扩展，即使没有内容填充，`auto-fit` 不同的是，新扩展的列被折叠，视觉表现上，感觉是原有的列均分了行的宽度
 视频示意，注意 `auto-fit` 列数是在增加的当有足够的空间
-![resize-example](../img/resize.mov)
+![img](../img/resize.gif)
 
 #### 一些用例
 
