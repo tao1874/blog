@@ -1,6 +1,6 @@
 ---
 title: JS 实现 LinkedList
-date: 2019-01-27 21:54:38
+date: 2021-09-17 21:54:38
 tags: 数据结构 JavaScript
 ---
 ### LinkedList
