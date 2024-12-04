@@ -10,7 +10,7 @@
 ## 什么是 Monorepo
 
 在软件开发中，`Monorepo`（"mono"意为"单一"，"repo"是"存储库"的缩写）是一种策略，它将多个项目集中在一个代码仓库中进行管理。这些项目之间通常具有一定的联系，可以共享代码或依赖，以提高开发效率。
-![monorepo](./image/monorepo.svg)
+![monorepo](../img/monorepo.svg)
 
 ## Monorepo 的特点
 
@@ -25,7 +25,7 @@
 
 下图展示了 `Multirepo` 和 `Monorepo` 的在代码仓库上区别
 
-![monorepo-vs-multirepo](./image/monorepo-mutirepo.svg)
+![monorepo-vs-multirepo](../img/monorepo-mutirepo.svg)
 
 在传统的多仓库结构中（`Multirepo`），每个项目独立维护，可能会面临以下问题：
 
@@ -76,7 +76,7 @@
 3. 统一构建：确保所有项目使用相同版本的共享包
 4. 简化工作流：减少了发布、更新和重新安装的步骤
 
-![monorepo-flow](./image/monorepo-flow.svg)
+![monorepo-flow](../img/monorepo-flow.svg)
 这种方法不仅提高了开发效率，还确保了项目间的一致性，是现代大型前端项目开发的推荐实践。
 
 ## Workspace 设置
@@ -126,7 +126,7 @@ packages:
 
 下图展示了项目的依赖关系
 
-![monorepo-dependencies](./image/monorepo-g2.svg)
+![monorepo-dependencies](../img/monorepo-g2.svg)
 
 ### 为什么选择 `pnpm`
 
@@ -141,7 +141,7 @@ packages:
 
 设置完 `Workspace` 后，我们可以很方便的共享代码，但是还有一个问题：就是任务管理，比如你要构建应用 `admin`，你先要构建其依赖 `@org/ui`，而 `@org/ui` 又依赖 `@org/api`，此外还要考虑并行构建 `tenant` 加快构建速度。这些复杂的任务管理，需要一个工具支持。一个优秀的 `Monorepo` 工具通要常具备以下能力：
 
-![monorepo-tools](./image/monorepo-tools.svg)
+![monorepo-tools](../img/monorepo-tools.svg)
 
 1. 本地计算缓存
    未改变的文件跳过重复构建，提升效率。
