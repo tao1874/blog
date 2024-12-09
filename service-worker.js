@@ -26,100 +26,100 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [
   {
-    "url": "1970/01/01/monorepo-基于pnpm-和-turborepo的最佳实践/index.html",
-    "revision": "703fb84a23c617d8aea7d4dac0f00e69"
-  },
-  {
     "url": "2017/09/27/随机与刻意练习/index.html",
-    "revision": "e27b2bce7719d014cd588f672dcb799c"
+    "revision": "21968c21a3455b282dd9b5be2fbaef0f"
   },
   {
     "url": "2018/04/29/css-父级元素高度为-0-解决方案/index.html",
-    "revision": "d6a7b2f5ac330765243b90b1483d86ee"
+    "revision": "15f37eeca9ec8317e6386d432d504943"
   },
   {
     "url": "2018/05/03/javascript-原型理解/index.html",
-    "revision": "746b3120bd04a690a679279dd2c4b51c"
+    "revision": "8f9d2016239fb042b0964bdd3dcc193e"
   },
   {
     "url": "2018/05/05/csss实现滑动操作/index.html",
-    "revision": "dce7b95051c05d3a418aa22652fd3a23"
+    "revision": "1319b31c918886c040640658481ddb32"
   },
   {
     "url": "2018/09/26/just-do-it/index.html",
-    "revision": "6d8b0cf66f615e021ed15efb286a8216"
+    "revision": "be1b759384e227260bd57131d5dabae6"
   },
   {
     "url": "2018/11/03/难念的经/index.html",
-    "revision": "9773672b718dc29327d2b0baf5bc2e10"
+    "revision": "159fe124f50eec1f88771df2e193b524"
   },
   {
     "url": "2018/12/01/困境/index.html",
-    "revision": "aa2917700cad34f08314e4e91d13b97b"
+    "revision": "b60f2126bec729845b18661820e4feeb"
   },
   {
     "url": "2019/01/27/css术语/index.html",
-    "revision": "2f7247d2f48abdc7f30cdb8ab5c48fb4"
+    "revision": "893a7a4706cfdc19b1a934b4c83e2335"
   },
   {
     "url": "2019/01/27/前端神器——emment/index.html",
-    "revision": "6f57e4e1f3e4a1fa4ab4b6cc0622e8ef"
+    "revision": "a1a17bce901829c8b4ef5f8ff593fb81"
   },
   {
     "url": "2019/01/27/风/index.html",
-    "revision": "85a6344ddc17b602e58ea220f018f962"
+    "revision": "ee54a1b066b1ecfac66b3b5074b79d73"
   },
   {
     "url": "2019/03/16/javascript-数组/index.html",
-    "revision": "e6b8ed33a5394aefcb0c5eb5a5e4f11f"
+    "revision": "ffd9309891f53bb1bc130fae91e18473"
   },
   {
     "url": "2019/03/30/我所理解的html语义化/index.html",
-    "revision": "70e21d91e7e211e94c1c0981d7742e91"
+    "revision": "19245adef98d8995ab323a37b7c1c2fd"
   },
   {
     "url": "2019/04/02/写给自己看的grid布局教程/index.html",
-    "revision": "1b708cfd57caf382c843f630d87f5bfd"
+    "revision": "f30bd70b34e5ebe086b40e0fdeb666fe"
   },
   {
     "url": "2019/05/26/vue之作用域插槽/index.html",
-    "revision": "d3c8c619895ffc602cc3352fad3f40b3"
+    "revision": "322ca7aad5aa2606d047eb2c2a079a2e"
   },
   {
     "url": "2019/09/22/web-components-简明教程/index.html",
-    "revision": "3f4fce2afefc4382f86bd767446a7222"
+    "revision": "b62ce856d322caffb130791b4809e454"
   },
   {
     "url": "2020/01/11/正则表达式学习小记/index.html",
-    "revision": "62b5bfe01a9df94a7677a5358626064a"
+    "revision": "c588e60dc3416c5c51af84bc46e3f80e"
   },
   {
     "url": "2021/04/17/javascript设计模式与开发实践/index.html",
-    "revision": "e0b8c41b17e366c2b72a5974ca1f2ad0"
+    "revision": "25e5167acaaa40e2e7c08e423d4ec69b"
   },
   {
     "url": "2021/04/24/工厂模式/index.html",
-    "revision": "490b55e9ad2fad0222b9b5de13f6ff9f"
+    "revision": "dbbfa8bcdb0add22503106b07ffef3ad"
   },
   {
     "url": "2021/05/07/minmax函数/index.html",
-    "revision": "c1c1c2bf2f47cc857b5acab99e1225a8"
+    "revision": "0a39873afaac8e4e336edc372e147282"
   },
   {
     "url": "2021/08/07/javascript-generator-理解和应用/index.html",
-    "revision": "fd61e894a9912e86348a6a8ade48f807"
+    "revision": "631d6e5e9c0d5308a5c8eae77081df8c"
   },
   {
     "url": "2021/08/07/vue3-typescipt/index.html",
-    "revision": "5d404e916f8b62f228f865c90ff99917"
+    "revision": "4fda1badc1414723eeaef08afab97422"
   },
   {
     "url": "2021/09/17/数据结构——linked-list/index.html",
-    "revision": "231183a9447aad6cbd5cc3c84abb2aa8"
+    "revision": "31f72e9a27363633c44015c59dc258fa"
+  },
+  {
+    "url": "2024/12/09/monorepo-基于pnpm-和-turborepo的最佳实践/index.html",
+    "revision": "b649577786f9242f5e4a7558c6adc098"
   },
   {
     "url": "404.html",
-    "revision": "bd64d34deb4d498e64c2b2f111d4ff60"
+    "revision": "9811944601003c88722bc3a57ba6c967"
   },
   {
     "url": "assets/css/0.styles.65e42172.css",
@@ -190,12 +190,12 @@ self.__precacheManifest = [
     "revision": "874acf8d5a258c724b2971a76738bce3"
   },
   {
-    "url": "assets/js/13.1036b72a.js",
-    "revision": "bc2018bad56118aaba8945d20ddc5368"
+    "url": "assets/js/13.43f9c825.js",
+    "revision": "7cee4fd6348b702d36791c41458c387a"
   },
   {
-    "url": "assets/js/14.01cda084.js",
-    "revision": "44ac712417d49be7e8b514e7b2a33b89"
+    "url": "assets/js/14.fd911833.js",
+    "revision": "cf957f2d7d95381011d50c647edd3a9f"
   },
   {
     "url": "assets/js/15.666b317e.js",
@@ -234,32 +234,32 @@ self.__precacheManifest = [
     "revision": "14482529866c1af7fee52a46d4db7d21"
   },
   {
-    "url": "assets/js/24.97ad4fca.js",
-    "revision": "5fd2452fe4d9439da46a8e1db13f9e7b"
+    "url": "assets/js/24.576cec0a.js",
+    "revision": "ddad3afc00addd12f41092ba1c6caedd"
   },
   {
-    "url": "assets/js/25.768bca20.js",
-    "revision": "2bd00180e092931ea5bddaadfd79891d"
+    "url": "assets/js/25.94755077.js",
+    "revision": "96cbae49dc56e744f53a008c738bee5e"
   },
   {
     "url": "assets/js/26.2733b16f.js",
     "revision": "e9024c6b9a7c370fbdac4a6dc5cfb8d8"
   },
   {
-    "url": "assets/js/27.559fd547.js",
-    "revision": "3889a5f878c387efb01b142681af46f9"
+    "url": "assets/js/27.cea65037.js",
+    "revision": "9c16324c530eda6ffdaa157ee1244368"
   },
   {
     "url": "assets/js/28.6a0ec835.js",
     "revision": "bb0e09dd32c94fe053ad3dfe2d6d6acc"
   },
   {
-    "url": "assets/js/29.17c28a0d.js",
-    "revision": "14f6e102dd51721342472057efa7d07e"
+    "url": "assets/js/29.812d1b87.js",
+    "revision": "9112c265afdcba9e0f30e367808a3437"
   },
   {
-    "url": "assets/js/30.ac3f6133.js",
-    "revision": "f5390ba7cf8534ffa5b522c4f1d3a9f9"
+    "url": "assets/js/30.d8a32779.js",
+    "revision": "5bd330c0a632a18031bddfb41379fac5"
   },
   {
     "url": "assets/js/31.b85fb174.js",
@@ -274,16 +274,16 @@ self.__precacheManifest = [
     "revision": "f075432523d915d7fba3cf87d312d100"
   },
   {
-    "url": "assets/js/34.d1508fb4.js",
-    "revision": "821bce954194a4555b907f61a0c40c5b"
+    "url": "assets/js/34.520129c6.js",
+    "revision": "96bd4cceb535ec9bfc3f813d64039274"
   },
   {
-    "url": "assets/js/35.e7ad2a23.js",
-    "revision": "efff1960e5330d5e5e1192a0c95c1350"
+    "url": "assets/js/35.91a83d18.js",
+    "revision": "8993ed87cf211225fc8d197e31ea8779"
   },
   {
-    "url": "assets/js/36.588304cf.js",
-    "revision": "6ef5c11acba5cbb4a13e597a0099d029"
+    "url": "assets/js/36.98166262.js",
+    "revision": "f3a310eb57e9fd0226dedcf44ad0fad7"
   },
   {
     "url": "assets/js/37.47772a1a.js",
@@ -318,8 +318,8 @@ self.__precacheManifest = [
     "revision": "a22950e7b2dbacd9e466d1d75ba5a373"
   },
   {
-    "url": "assets/js/app.7d50110b.js",
-    "revision": "77aa05adccd91d0025eb909fee161d34"
+    "url": "assets/js/app.ebb2ca96.js",
+    "revision": "7971a926ce6a97e50282167563f9a23f"
   },
   {
     "url": "assets/js/vuejs-paginate.06b3d1a1.js",
@@ -347,63 +347,67 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "0a37f1e995ce7653e213e30614031ec1"
+    "revision": "af9bbb17caa27953662bb21b917bc738"
   },
   {
     "url": "page/2/index.html",
-    "revision": "2e74bd19ea638db2a7a7fbef17728f48"
+    "revision": "53ef08350aebc7880ad205af8c99019c"
   },
   {
     "url": "page/3/index.html",
-    "revision": "c5f83571d2f315b8ba4ccd679886bbce"
+    "revision": "e34ba622189d47730b7bd10d894695ba"
   },
   {
     "url": "page/4/index.html",
-    "revision": "b0eaddad9a504a0621f113d704ac6f62"
+    "revision": "54648e16678b09439c761dea0e742c15"
   },
   {
     "url": "page/5/index.html",
-    "revision": "a6a795dbcb794adcd182942677306d17"
+    "revision": "d5b52807698cdc82be576b112a6a6852"
   },
   {
     "url": "tag/CSS/index.html",
-    "revision": "6363e2de985826dd79964d74364bd3eb"
+    "revision": "902cd41dd38a6f450604b04c7aba7ace"
   },
   {
     "url": "tag/Design Patters/index.html",
-    "revision": "472e189f7587fbbb217b766208f79b84"
+    "revision": "bf64a09061473d1b771b88d775f4ba26"
   },
   {
     "url": "tag/HTML/index.html",
-    "revision": "ea06176298ac9a4c930f06b61d91fe99"
+    "revision": "02dadacca50dfa3c74192cf2bf1f108e"
   },
   {
     "url": "tag/index.html",
-    "revision": "e1a14fbf93d44590bf9cd8efdba70026"
+    "revision": "eae7dbf74778f9e750abd4374ad922c9"
   },
   {
     "url": "tag/JavaScript/index.html",
-    "revision": "690c253151d5b3c2497cf6f92eb8d38f"
+    "revision": "f70f30152de40021efc1f64b230a7c53"
+  },
+  {
+    "url": "tag/Monorepo/index.html",
+    "revision": "9623fd905e67b102073e3105fb77d45e"
   },
   {
     "url": "tag/Regex/index.html",
-    "revision": "5b7cf83bdad642631b1b8a5dc13b7586"
+    "revision": "22c104fb25a410fbf6317a69abe67ffc"
   },
   {
     "url": "tag/Tool/index.html",
-    "revision": "2000737b6dc34cbf8953cd0769c281bd"
+    "revision": "3eb225440edfc4f4af08ce91637580b6"
   },
   {
     "url": "tag/Vue/index.html",
-    "revision": "732c09f236213631b9f74cc506ab8336"
+    "revision": "6ea4755c6861e11c9bea9f56672a2075"
   },
   {
     "url": "tag/数据结构 JavaScript/index.html",
-    "revision": "f254d7fb5ee7fafdc8769fb615f353e6"
+    "revision": "e02e5e4947053e212e6d638cfb3e071e"
   },
   {
     "url": "tag/随笔/index.html",
-    "revision": "df115f497b1ecd0dcb3287f385093d36"
+    "revision": "de08cafd17260a623c349d4b38dddb7f"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
